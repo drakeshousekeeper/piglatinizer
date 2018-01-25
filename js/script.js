@@ -7,14 +7,31 @@
 // Document Ready Function. All of your jQuery should go in here. 
 $( document ).ready(function() {
 	
-	$("button").click(function(){
+	$(button).click(function(){
 		var message = $("input").val();
-		
+		$("#result").html(message);
 	});
 	
-	function ay(word){
-		return word + "ay";
-	}
+	// function addAy(word){
+	// 	return word + "ay";
+	// }
+	
+	// function split(phrase){
+	// 	return phrase.split(' ');
+	// }
+	
+// 	for (var i = 0; i < array.length; i = i + 1){
+//     console.log("I love ice cream!");
+// }
+
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
