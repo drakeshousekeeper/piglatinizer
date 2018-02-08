@@ -5,33 +5,74 @@
 // CREATE THE FUNCTIONS BELOW
 
 // Document Ready Function. All of your jQuery should go in here. 
-$( document ).ready(function() {
+$(document).ready(function() {
 	
-	$(button).click(function(){
-		var message = $("input").val();
-		$("#result").html(message);
+	$("#submit").click(function() {
+		var message = $("#input").val();
+		$("#result").html(convertToPigLatin(message));
 	});
 	
-	// function addAy(word){
+	function wordToPigLatin(word){
+		var firstLetter = messageArray.slice(0,2);
+		return word + firstLetter + "ay";
+	}
+	
+	function convertToPigLatin(phrase){
+		var wordsArray = phrase.split(" ").toLowerCase();
+			for(var i = 0; i < wordsArray.length; i++){
+				wordsArray[i] = wordToPigLatin(word);
+			}
+	}
+	
+	
+	
+});
+
+
+	// function convertToPigLatin(phrase){
+	// 	var wordsArray = phrase.split(" ").toLowerCase();
+	// 		for(var i = 0; i < wordsArray.length; i++){
+	// 			wordsArray[i] = wordToPigLatin(word);
+	// 		}
+	// }
+
+	// function wordToPigLatin(word){
+	// 	var firstLetter = messageArray.slice(0,2);
+		
+	// 	return word + firstLetter + "ay";
+	// }
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	//	var messageArray = message.split(" ").toLowerCase();
+	
+	// messageArray.slice(0,2);
+
+
+	// function addAy(word) {
 	// 	return word + "ay";
 	// }
-	
-	// function split(phrase){
-	// 	return phrase.split(' ');
-	// }
-	
-// 	for (var i = 0; i < array.length; i = i + 1){
-//     console.log("I love ice cream!");
-// }
 
-//
-//
-//
-//
-//
-//
-//
-//
+	//	if (firstLetter === "a" || "e" || "i" || "o" || "u") {
+	//		---
+	//	} else if(firstLetter !== "a" || "e" || "i" || "o" || "u") {
+	//		---
+	//	}
+
+
+
 
 
 
@@ -43,5 +84,5 @@ $( document ).ready(function() {
 
 
 // Create the sentenceToPigLatin function that takes a sentence as a parameter
-	//Loops through all the words in the sentence and transforms each word
-	//It should return a transfromed sentance
+//Loops through all the words in the sentence and transforms each word
+//It should return a transfromed sentance
